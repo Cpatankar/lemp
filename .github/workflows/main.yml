@@ -2,7 +2,7 @@ name: LEMP Server
 on:
   push:
     branches:
-    - mainnnnn
+    - main
 jobs:
   Docker-LEMP:
     runs-on: self-hosted
