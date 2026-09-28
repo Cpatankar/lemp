@@ -10,7 +10,7 @@ jobs:
       BUILD_NUMBER: ${{ github.run_number }}
     steps:
       - uses: actions/checkout@v3
-      - name: Install Docker & Docker Compose on my lemp-runner
+      - name: Install Docker & Docker Compose on my lemp-runner for chandru
         run: |
             sudo apt update
             sudo apt install docker.io -y
