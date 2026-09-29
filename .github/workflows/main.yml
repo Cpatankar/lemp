@@ -21,7 +21,7 @@ jobs:
             sudo usermod -aG docker github
         
       - name: Logging into the Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v3
         with:
            username: ${{ secrets.DOCKER_USER }}
            password: ${{ secrets.DOCKER_PASS }}
