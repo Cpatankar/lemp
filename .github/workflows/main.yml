@@ -23,8 +23,8 @@ jobs:
       - name: Logging into the Docker Hub
         uses: docker/login-action@v1
         with:
-           username: ${{ secrets.chandrakat1 }}
-           password: ${{ secrets.dckr_pat_djKvwZ_N5RO8LI__jxIQQTX8d9k }}
+           username: ${{ secrets.DOCKER_USER }}
+           password: ${{ secrets.DOCKER_PASS }}
 
       - name: Build Docker Images with their respective tags
         run: docker compose build
